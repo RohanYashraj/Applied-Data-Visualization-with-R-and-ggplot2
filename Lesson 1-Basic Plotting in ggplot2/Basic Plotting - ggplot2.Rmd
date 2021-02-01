@@ -37,7 +37,8 @@ str(sleep)
 # Exercise: plotting with qplot and R
 ```{r}
 hist(airquality$Temp)
-qplot(airquality$Temp)
+p1 <- qplot(airquality$Temp)
+ggplotly(p1)
 ```
 # Topic B: Geomtric Objects
 
@@ -62,7 +63,7 @@ str(df_desc)
 
 # Exercise: Creating a histogram using ggplot
 ```{r}
-ggplot(df_hum, aes(x=Vancouver)) + geom_histogram()
+ggplot(df_hum, aes(x=Miami)) + geom_histogram()
 ```
 
 # Activity B-1:Creating a Histogram and Explaining its Features
@@ -88,6 +89,8 @@ ggplot(df_desc,aes(x=Seattle)) + geom_bar()
 # Exercise:Create a 2D bar chart
 ```{r}
 ggplot(RetailSales,aes(x=Month,y=Sales)) + geom_bar(stat="identity")
+
+# ggplot(RetailSales,aes(x=Month)) + geom_bar()
 ```
 
 
@@ -128,13 +131,21 @@ ggplot(df_hum,aes(x=month,y=San.Francisco)) + geom_boxplot()
 #Subtopic: Scatterplot
 a=3.4
 v0=27
+```
 
+
+```{r}
 #Generate some random time numbers
+library(plotly)
 time <- runif(50, min=0, max=200)
 distance <- sapply(time, function(x) v0*x + 0.5*a*x^2)
 df <- data.frame(time,distance)
-ggplot(df,aes(x=time,y=distance)) + geom_point()
+p <- ggplot(df,aes(x=time,y=distance)) + geom_point()
+ggplotly(p)
+```
 
+
+```{r}
 ggplot(df,aes(x=time,y=distance)) + geom_line()
 ```
 
@@ -190,7 +201,10 @@ ggplot(df_edu,aes(x=gender,y=Discussion)) + geom_boxplot()
 #Rebinning
 ggplot(df_hum,aes(x=Vancouver))+geom_histogram()+ggtitle("Default Binning")
 ggplot(df_hum,aes(x=Vancouver))+geom_histogram(bins=15)+ggtitle("Rebinned")
+```
 
+
+```{r}
 #Improve plot by chaging defaults
 ggplot(df_hum,aes(x=Vancouver))+
                     geom_histogram(bins=15,fill="white",color=1)+

@@ -87,9 +87,11 @@ ggplot(df_desc,aes(x=Seattle)) + geom_bar()
 
 # Exercise:Create a 2D bar chart
 ```{r}
-
 ggplot(RetailSales,aes(x=Month,y=Sales)) + geom_bar(stat="identity")
+```
 
+
+```{r}
 #Note: months are not ordered.
 #Order the months:
 #Check levels

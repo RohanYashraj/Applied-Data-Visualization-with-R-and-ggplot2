@@ -27,6 +27,4 @@ You’ll also need the following software installed in advance:
 #### About the Author
 Github profile: https://github.com/RohanYashraj
 
-
-#### Source
-https://github.com/TrainingByPackt/Applied-Data-Visualization-with-R-and-ggplot2
+forked from TrainingByPackt/Applied-Data-Visualization-with-R-and-ggplot2

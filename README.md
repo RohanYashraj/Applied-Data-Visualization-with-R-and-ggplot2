@@ -18,23 +18,11 @@ This course introduces you to the world of data visualization by talking about t
 * Logically and systematically explore complex relationships
 * Compare variables in a single visual, with advanced plotting methods
 
-### Hardware requirements
-For an optimal student experience, we recommend the following hardware configuration:
-* **Processor**: 2.6 GHz or higher, preferably multi-core
-* **Memory**: 8GB RAM
-* **Hard disk**: 35GB or more 
-* An Internet connection
-
-
-
 ### Software requirements
 You’ll also need the following software installed in advance:
 * Operating System: Windows (8 or higher).
 * R (latest version)
 * RStudio (latest version)
 
-
 #### About the Author
-Dr. Tania Moulik has a PhD in particle physics. She worked at CERN and the Tevatron at Fermi National Accelerator Laboratory in IL, USA. She has worked with C++, Python, and R. She also worked in big data projects and grid computing. She has a passion for data analysis and likes to share her knowledge with others who would like to delve into the world of data analytics. She especially likes R and ggplot2 as a powerful analytics package.
-You can find out more about Tania on her LinkedIn profile: https://www.linkedin.com/in/tanmoulik/
-
+Github profile: https://github.com/RohanYashraj
